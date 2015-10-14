@@ -1,0 +1,595 @@
+/*
+ * Variables
+ * ------------------------------------------------------------------------------------------------
+ */
+ 
+$darkest-color: #181A1C;
+$medium-color: #56595A;
+$lightest-color: #D6D6D6;
+
+$brand-color: #1CA7B2;
+$brand-color-gray: #919295;
+
+$swiper-background-color: #041819;
+
+$base-font-size: 18px;
+$masthead-font-size: 3.0em;
+$normal-font-size: 1.0em;
+$header-font-size: 1.2em;
+
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+/*
+ * General
+ * ------------------------------------------------------------------------------------------------
+ */
+
+html {
+    font-size: $base-font-size;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $normal-font-size;
+  background-color: $darkest-color;
+  color: $medium-color;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.logo {
+    font-family: 'VT323', sans-serif;
+    font-size: 1.3em;    
+}
+
+.logo .logo-dc {
+    color: $brand-color-gray;
+}
+
+.logo .logo-dc-dark {
+    color: $darkest-color;
+}
+
+.logo .logo-713 {
+    color: $brand-color;
+}
+
+.header {
+  border-bottom: 1px solid $lightest-color;  
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    font-size: $masthead-font-size;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: $darkest-color;
+  color: $medium-color;
+  padding: 0.2em 0;
+}
+
+.bashprompt {
+    color: $medium-color;
+}
+
+/*
+ * Layout Goodies
+ * ------------------------------------------------------------------------------------------------
+ */
+ 
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    text-align: center;
+}
+
+/* Use this if you want center an element with the span class */
+.center {
+    float: none !important;
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+.highlighted-box {
+    background: #F4F8F9;
+    padding: 20px 30px;
+}
+
+.highlighted-box h1 {
+    margin: 0px;
+}
+
+.highlighted-box h1,
+.highlighted-box p {
+    color: $darkest-color !important;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.error {
+    color: #CF0000;
+    display: none;
+}
+
+.invisible {
+    display: none;
+    visibility: visible;
+}
+
+/*
+ * Swiper
+ * ------------------------------------------------------------------------------------------------
+ */
+
+.swiper-container {
+    width: 100%;
+    height: 225px;
+    background-color: $swiper-background-color;
+    // margin-bottom: 10px;
+}
+
+.swiper-slide {
+    font-family: 'VT323', sans-serif;
+    font-size: $normal-font-size;
+    color: $lightest-color;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide a {
+    color: $medium-color;
+}
+
+.swiper-slide .title {
+    color: $brand-color;
+    font-size: $header-font-size;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.swiper-slide .subtitle {
+    font-size: $header-font-size;
+}
+
+.swiper-slide .text {
+    font-size: $normal-font-size;
+    // max-width: 500px;
+    line-height: 1.5;
+}
+
+/*
+ * Typed.js
+ * ------------------------------------------------------------------------------------------------
+ */
+ 
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*
+ * Buttons
+ * ------------------------------------------------------------------------------------------------
+ */
+ 
+.button,
+.button:visited,
+.button:focus {
+    display: inline-block;
+    border: 1px solid $darkest-color;
+    color: $darkest-color;
+    background-color: transparent;
+    padding: 15px 30px;
+    font-size: $normal-font-size;
+    line-height: auto;
+}
+
+.button:hover,
+.button:active {
+    background-color: $darkest-color;
+    color: $lightest-color;
+}
+
+.button-sp,
+.button-sp:visited,
+.button-sp:focus {
+    border: none;
+    background-color: $medium-color;
+    color: $darkest-color;
+}
+
+.button-sp:hover,
+.button-sp:active {
+    background-color: $darkest-color;
+    color: $medium-color;
+}
+
+.button-ps,
+.button-ps:visited,
+.button-ps:focus {
+    border: none;
+    background-color: $darkest-color;
+    color: $medium-color;
+}
+
+.button-ps:hover,
+.button-ps:active {
+    background-color: $medium-color;
+    color: $darkest-color;
+}
+
+/*
+ * Bootstrap Nav Pills
+ * ------------------------------------------------------------------------------------------------
+ */
+ 
+.nav-pills {
+  > li {
+    float: left;
+    padding-right: 10px;
+
+    // Links rendered as pills
+    > a {
+      color: $lightest-color;
+      background-color: $brand-color;
+      border: 1px solid transparent; // We don't want the pills to move because we add a border on hover
+      text-transform: uppercase;
+      &:hover {
+        border: 1px solid $medium-color;        
+        background: transparent;
+        transition: border-color 1s ease; // Fade that border in nice and easy
+      }
+    }
+    + li {      
+      margin-left: 5px;
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $brand-color;
+        border: 1px solid $medium-color;
+      }
+    }
+  }
+}
+
+/*
+ * Icons
+ * ------------------------------------------------------------------------------------------------
+ */
+ 
+// No fuss, no muss. 50% border-radius makes the circle and it will resize based on the font-size and padding.
+.round-glyphicon {
+    background-color: $medium-color;
+    color: $brand-color;
+    padding: 30px;
+    font-size: 90px;
+    border-radius: 50%;
+}
+
+.round-fa {
+    color: $brand-color;
+    font-size: 30px;
+}
+
+/*
+ * Sections
+ * ------------------------------------------------------------------------------------------------
+ */
+
+.section .title {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.section .title h1 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.section .title > p {
+    font-size: $header-font-size;
+    color: $lightest-color;
+    font-weight: lighter;
+}
+
+.primary-section {
+    background: $darkest-color;
+}
+
+.primary-section,
+.primary-section .title p,
+.primary-section h3 {
+    color: $medium-color;
+}
+
+.primary-section h1 {
+    color: $lightest-color;
+}
+
+.secondary-section {
+    background: $medium-color;
+}
+
+.secondary-section h1,
+.secondary-section a,
+.secondary-section .title p {
+    color: $darkest-color;
+}
+
+.sub-section {
+    margin-top: 30px;
+}
+
+.sub-section .title {
+    padding: 0;
+}
+
+/*
+ * What We Do Section
+ * ------------------------------------------------------------------------------------------------
+ */
+
+.whatwedo {
+    padding-top: 10px;
+}
+
+.whatwedo .detail {
+    color: $darkest-color;
+    margin: 20px;
+}
+
+.whatwedo h3 {
+    color: $darkest-color;
+    margin-top: 0px;
+    font-family: 'VT323', sans-serif;
+}
+
+.whatwedo p {
+    padding-bottom: 10px;
+    color: $darkest-color;
+}
+
+/*
+ * What We Value Section
+ * ------------------------------------------------------------------------------------------------
+ */
+
+.whatwevalue {
+    padding-top: 20px;
+}
+
+.whatwevalue h3 {
+    color: $lightest-color;
+    font-family: 'VT323', sans-serif;
+    font-size: 1.8em;
+}
+
+.whatwevalue p {
+    padding: 0px 50px;
+    height: 60px;
+    color: $medium-color;
+}
+
+/*
+ * Join Us Section
+ * ------------------------------------------------------------------------------------------------
+ */
+
+.join-us {    
+    font-size: $header-font-size;
+    color: $darkest-color;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+/*
+ * Contact Section
+ * ------------------------------------------------------------------------------------------------
+ */
+ 
+.contact {
+    background: $darkest-color;
+}
+
+.social {
+    line-height: 1.2em;
+    font-size: $header-font-size;
+    color: $darkest-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*
+ * Google Map
+ * ------------------------------------------------------------------------------------------------
+ */
+
+.map-wrapper {
+    position: relative;
+    height: 500px;
+}
+
+.map-canvas {
+    position: absolute;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+    color: #29383F;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+#map-canvas img {
+	max-width: none !important;
+}
+
+.gm-style-iw {
+	width: 350px !important;
+	top: 15px !important;
+	left: 0px !important;
+	background-color: $lightest-color;
+	box-shadow: 0 1px 6px $brand-color;
+	border: 1px solid $medium-color;
+	border-radius: 2px 2px 10px 10px;
+}
+
+#iw-container {
+	margin-bottom: 10px;
+}
+
+#iw-container .iw-title {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	padding: 10px;
+	background-color: $medium-color;
+	color: $lightest-color;
+	margin: 0;
+	border-radius: 2px 2px 0 0;
+}
+
+#iw-container .iw-content {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	margin-right: 1px;
+	padding: 15px 5px 20px 15px;
+	max-height: 140px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.iw-content img {
+	float: right;
+	margin: 0 5px 5px 10px;	
+}
+
+.iw-subTitle {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 5px 0;
+}
+
+.iw-bottom-gradient {
+	position: absolute;
+	width: 326px;
+	height: 25px;
+	bottom: 10px;
+	right: 18px;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+/*
+ * Footer
+ * ------------------------------------------------------------------------------------------------
+ */
+
+.footer {
+    padding-top: 10px;
+    font-size: 16px;
+    background: $darkest-color;
+    text-align: center;
+}
+
+.footer > p {
+    color: $lightest-color;
+    margin: 0;
+}
+
+/*
+ * Responsive Stuff
+ * ------------------------------------------------------------------------------------------------
+ */
+ 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+  
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "dc713",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "Swiper": "swiper#~3.1.5",
+    "animate.css": "~3.4.0",
+    "font-awesome": "fontawesome#~4.4.0",
+    "bootstrap-social": "~4.10.1",
+    "typed.js": "~1.1.1"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.3.0",
+    "mocha": "~2.3.3"
+  }
+}
