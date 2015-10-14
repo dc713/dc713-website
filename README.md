@@ -1,6 +1,6 @@
 # DC713 Website
 
-This is the source code for the Houston DC713 website.
+This is the source code for the [Houston DC713 website](http://www.dc713.net).
 
 ## Features
 
@@ -40,8 +40,12 @@ Here's what you'll need to install:
 - Install [Gulp](http://gulpjs.com/) `npm install --global gulp`
 - Install [Bower](http://bower.io/) `npm install --global bower`
 
+Now you'll need to remember these things:
+
 - Run `gulp serve` to preview and watch for changes
 - Run `bower install --save <package>` to install frontend dependencies
 - Run `gulp serve:test` to run the tests in the browser
 - Run `gulp` to build your webapp for production
 - Run `gulp serve:dist` to preview the production build
+
+NOTE: If you forget to `gulp serve` and do a `bower install --save <package>` then wiredep won't automagically add the dependencies where they belong. To fix that, simply run `gulp wiredep` to patch things up.
