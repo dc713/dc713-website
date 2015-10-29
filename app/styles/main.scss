@@ -79,7 +79,7 @@ a:active {
 }
 
 .header {
-  border-bottom: 1px solid $lightest-color;  
+//   border-bottom: 1px solid $lightest-color;  
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -484,6 +484,9 @@ a:active {
  * Google Map
  * ------------------------------------------------------------------------------------------------
  */
+
+// Technique ripped from...
+// http://en.marnoto.com/2014/09/5-formas-de-personalizar-infowindow.html
 
 .map-wrapper {
     position: relative;
