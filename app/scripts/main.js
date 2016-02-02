@@ -68,18 +68,14 @@ function initializeDetailAccordian() {
  */
 function initializeMap() {
 
-    var lat = "29.750815";
-    var lon = "-95.340470";
+    var lat = "29.749028";
+    var lon = "-95.457039";
 
     // InfoWindow content
     var content = '<div id="iw-container">' +
-        '<div class="iw-title">TX/RX Labs</div>' +
+        '<div class="iw-title">1800 West Loop</div>' +
         '<div class="iw-content">' +
-        '<div class="iw-subTitle">History</div>' +
-        '<p>TX/RX is a non-profit Hackerspace in Houston, Texas offering classes, lab space, and collective knowledge to help you launch your ideas and projects. They are a project based group of makers, inventors, tinkerers, artists, crafters, and coders. They are housed in a 30,000 square foot facility which includes a rapid fabrication lab, electronics lab, metal fabrication shop, wood workshop, machine shop, bike maintenance and repair shop, art lab, computer lab and coworking space.</p>' +
-        '<div class="iw-subTitle">Contact</div>' +
-        '<p>205 Roberts Street, Houston, TX 77003<br>' +
-        '<br><a href="http://www.txrxlabs.org">www.txrxlabs.org</a></p>' +
+        '<p>Located in the heart of the West Loop/Galleria, Houston's premiere business and shopping district. Strategically positioned at the corner of San Felipe and the 610 Loop, the building is accessible to every major business area of Houston.</p>' +
         '</div>' +
         '<div class="iw-bottom-gradient"></div>' +
         '</div>';
