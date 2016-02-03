@@ -75,7 +75,7 @@ function initializeMap() {
     var content = '<div id="iw-container">' +
         '<div class="iw-title">1800 West Loop</div>' +
         '<div class="iw-content">' +
-        '<p>Located in the heart of the West Loop/Galleria, Houston's premiere business and shopping district. Strategically positioned at the corner of San Felipe and the 610 Loop, the building is accessible to every major business area of Houston.</p>' +
+        '<p>Located in the heart of the West Loop/Galleria, Houston\'s premiere business and shopping district. Strategically positioned at the corner of San Felipe and the 610 Loop, the building is accessible to every major business area of Houston.</p>' +
         '</div>' +
         '<div class="iw-bottom-gradient"></div>' +
         '</div>';
