@@ -246,7 +246,7 @@ function initializeMap() {
         map: map,
         position: new google.maps.LatLng(lat, lon),
         // icon: "images/green-marker-x.png",
-        title: "TX/RX Labs"
+        title: "1800 West Loop"
     });
 
     var infowindow = new google.maps.InfoWindow({
