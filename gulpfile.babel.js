@@ -8,6 +8,11 @@ import {stream as wiredep} from 'wiredep';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+var ftp = require('vinyl-ftp');
+var gutil = require('gulp-util');
+var minimist = require('minimist');
+var args = minimist(process.argv.slice(2));
+
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
@@ -159,6 +164,20 @@ gulp.task('wiredep', () => {
 // gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 //   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 // });
+
+gulp.task('deploy', function() {
+  var remotePath = '/public_html/';
+  var conn = ftp.create({
+    host: '192.185.98.198',
+    user: args.user,
+    password: args.password,
+    log: gutil.log
+  });
+
+  gulp.src('dist/**/*')
+    .pipe(conn.newer(remotePath))
+    .pipe(conn.dest(remotePath));
+});
 
 gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
