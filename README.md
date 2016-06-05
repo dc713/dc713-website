@@ -2,6 +2,8 @@
 
 This is the source code for the [Houston DC713 website](http://www.dc713.net).
 
+[![Build Status](https://travis-ci.org/dc713/dc713-website.svg?branch=master)](https://travis-ci.org/dc713/dc713-website)
+
 ## Features
 
 We make extensive use of super-groovy workflow tooling including [npm](https://www.npmjs.com/), [Gulp](http://gulpjs.com/), and [Bower](http://bower.io/).
@@ -49,3 +51,7 @@ Now you'll need to remember these things:
 - Run `gulp serve:dist` to preview the production build
 
 NOTE: If you forget to `gulp serve` and do a `bower install --save <package>` then wiredep won't automagically add the dependencies where they belong. To fix that, simply run `gulp wiredep` to patch things up.
+
+### Continuous Integration
+
+We use [Travis CI](https://www.travis-ci.org) for our continuous integration server. It will build, run applicable tests, and automagically deploy from the `master` branch.
