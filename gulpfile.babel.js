@@ -166,7 +166,7 @@ gulp.task('wiredep', () => {
 // });
 
 gulp.task('deploy', function() {
-  var remotePath = '/public_html/';
+  var remotePath = '/public_html';
   var conn = ftp.create({
     host: '192.185.98.198',
     user: args.user,
