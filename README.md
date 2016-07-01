@@ -54,4 +54,4 @@ NOTE: If you forget to `gulp serve` and do a `bower install --save <package>` th
 
 ### Continuous Integration
 
-We use [Travis CI](https://www.travis-ci.org) for our continuous integration server. It will build, run applicable tests, and automagically deploy from the `master` branch.
+We use [Travis CI](https://www.travis-ci.org) for our continuous integration server. It will build, run applicable tests, and automagically deploy from the `master` branch. Woo!
