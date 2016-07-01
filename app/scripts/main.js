@@ -68,14 +68,13 @@ function initializeDetailAccordian() {
  */
 function initializeMap() {
 
-    var lat = "29.7268789";
-    var lon = "-95.5557247";
-
+    var lat = "29.809264";
+    var lon = "-95.398971";
     // InfoWindow content
     var content = '<div id="iw-container">' +
-        '<div class="iw-title">10255 Richmond Ave</div>' +
+        '<div class="iw-title">2500 Yale St</div>' +
         '<div class="iw-content">' +
-        '<p>Located near the Sam Houston Tollway and easily accessible from the Southwest Freeway or the Katy Freeway.</p>' +
+        '<p>CoWork Labs: Located south of the I-10 Freeway.</p>' +
         '</div>' +
         '<div class="iw-bottom-gradient"></div>' +
         '</div>';
